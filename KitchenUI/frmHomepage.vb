@@ -20,7 +20,7 @@ Public Class frmMain
     Private Const btnNewChatPlaceholder As String = "New Chat"
 
     ' OpenAI Client
-    Private ReadOnly apiKey As String = "sk-proj-14eWcmiOzUwQSoadHrMJT3BlbkFJJgBjTx4gFjnnwFwgSTVH"
+    Private ReadOnly apiKey As String = "API KEY"
 
     Private Function GetUserInventory() As List(Of String)
         Dim connString As String = SQL_Connection.ConnectionString
@@ -539,5 +539,9 @@ Public Class frmMain
         ' Hide other forms and panels if needed
         pnlHome.Visible = False
         frmMyIngredients.Visible = False
+    End Sub
+
+    Private Sub Generating_Click(sender As Object, e As EventArgs) Handles Generating.Click
+
     End Sub
 End Class
